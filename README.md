@@ -24,10 +24,15 @@ public class UserController {
 }
 ```
 项目结构如下图所示
+
 ![](http://upload-images.jianshu.io/upload_images/1616232-cb851cc29286031b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 启动main函数控制台出现如下所示说明启动成功
+
 ![](http://upload-images.jianshu.io/upload_images/1616232-64d48967e9316b46.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 浏览器访问：默认端口8080
+
 ![](http://upload-images.jianshu.io/upload_images/1616232-e8d455fc04e5ce03.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 注解解释：@RestController注解相当于@ResponseBody ＋ @Controller合在一起的作用。
@@ -65,9 +70,13 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 ```
 ![](http://upload-images.jianshu.io/upload_images/1616232-152c2ca5c459416a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 浏览器输入访问接口：http://localhost:8080/query结果如图所示
+
 ![](http://upload-images.jianshu.io/upload_images/1616232-83b477c7b3b5d0ce.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 此时项目结构如下
+
 ![](http://upload-images.jianshu.io/upload_images/1616232-43258b8c2a58e919.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 注解:
@@ -93,8 +102,11 @@ public class PageController {
 }
 ```
 访问接口：http://localhost:8080/index结果如下所示
+
   ![](http://upload-images.jianshu.io/upload_images/1616232-4e3fe31047d79357.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 此时项目结构如下所示:
+
 ![](http://upload-images.jianshu.io/upload_images/1616232-4d589aded6888412.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ---
 >####所属文集：[SpringBoot学习](https://www.jianshu.com/nb/17480353)
