@@ -109,6 +109,48 @@ public class PageController {
 
 ![](http://upload-images.jianshu.io/upload_images/1616232-4d589aded6888412.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ---
->####所属文集：[SpringBoot学习](https://www.jianshu.com/nb/17480353)
->####项目地址：[GitHub](https://github.com/821453366/system-springboot)
+#### 5.切换application.properties 为application.yml
+>yml和properties文件是一样的原理,yml属性结构是将配置文件中的信息树形展示出来，更便于查看，但语法要求比较严格。
+
+- application.properties
+```
+spring.datasource.driverClassName = com.mysql.jdbc.Driver
+spring.datasource.url = jdbc:mysql://localhost:3306/web?useUnicode=true&characterEncoding=utf8
+spring.datasource.username = root
+spring.datasource.password = root
+
+#=========Mybatis 相关配置==================
+#mapper文件
+mybatis.mapperLocations=classpath:mapper/*.xml
+#可省略写mybatis的xml中的resultType的全路径
+mybatis.type-aliases-package=com.example.systemspringboot.entity
+
+#配置静态资源前后缀
+spring.mvc.view.prefix=/web/
+spring.mvc.view.suffix=.html
+```
+- application.yml
+```
+spring:
+  datasource:
+    password: root
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/web?useUnicode=true&characterEncoding=utf8
+    username: root
+  #配置静态 资源前后缀
+  mvc:
+    view:
+      prefix: /web/
+      suffix: .html
+#=========Mybatis 相关配置==================
+#1.mapper文件
+#2.可省略写mybatis的xml中的resultType的全路径
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  type-aliases-package: com.example.systemspringboot.entity
+```
+- ###### 推荐一个将application.properties 转换为application.yml的网站：[地址](https://www.bejson.com/devtools/properties2yaml/)
+---
+>#### 所属文集：[SpringBoot学习](https://www.jianshu.com/nb/17480353)
+>#### 项目地址：[GitHub](https://github.com/821453366/system-springboot)
 

@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    password: root
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/web?useUnicode=true&characterEncoding=utf8
+    username: root
+  #配置静态 资源前后缀
+  mvc:
+    view:
+      prefix: /web/
+      suffix: .html
+#=========Mybatis 相关配置==================
+#1.mapper文件
+#2.可省略写mybatis的xml中的resultType的全路径
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  type-aliases-package: com.example.systemspringboot.entity
